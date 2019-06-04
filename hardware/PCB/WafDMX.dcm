@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CH340C
+D USB to serial chip 2Mbps 3.3V, 5V
+K USB serial FTDI
+F https://lcsc.com/product-detail/USB_CH340C_C84681.html
+$ENDCMP
+#
+#End Doc Library
