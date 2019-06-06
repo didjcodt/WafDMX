@@ -1553,13 +1553,13 @@ Wire Notes Line
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5EDE5F57
-P 12400 4700
-F 0 "J2" H 12480 4692 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 12480 4601 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 12400 4700 50  0001 C CNN
-F 3 "~" H 12400 4700 50  0001 C CNN
-	1    12400 4700
-	1    0    0    -1  
+P 12400 4800
+F 0 "J2" H 12480 4792 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 12480 4701 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 12400 4800 50  0001 C CNN
+F 3 "~" H 12400 4800 50  0001 C CNN
+	1    12400 4800
+	1    0    0    1   
 $EndComp
 Text Label 4100 2500 2    50   ~ 10
 PHY_CLK_EN

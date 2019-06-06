@@ -1593,7 +1593,7 @@ U 1 1 5EF2710E
 P 4500 7100
 F 0 "TP1" V 4500 7300 50  0000 L CNN
 F 1 "TestPoint" V 4500 7575 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4700 7100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 7100 50  0001 C CNN
 F 3 "~" H 4700 7100 50  0001 C CNN
 	1    4500 7100
 	0    1    1    0   
@@ -1604,7 +1604,7 @@ U 1 1 5EF2B290
 P 4500 7300
 F 0 "TP2" V 4500 7500 50  0000 L CNN
 F 1 "TestPoint" V 4500 7775 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4700 7300 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 7300 50  0001 C CNN
 F 3 "~" H 4700 7300 50  0001 C CNN
 	1    4500 7300
 	0    1    1    0   
@@ -1615,7 +1615,7 @@ U 1 1 5EF37673
 P 4500 7400
 F 0 "TP3" V 4500 7600 50  0000 L CNN
 F 1 "TestPoint" V 4500 7875 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4700 7400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 7400 50  0001 C CNN
 F 3 "~" H 4700 7400 50  0001 C CNN
 	1    4500 7400
 	0    1    1    0   
@@ -1626,7 +1626,7 @@ U 1 1 5EF44AF8
 P 4500 8900
 F 0 "TP8" V 4500 9100 50  0000 L CNN
 F 1 "TestPoint" V 4500 9375 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4700 8900 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 8900 50  0001 C CNN
 F 3 "~" H 4700 8900 50  0001 C CNN
 	1    4500 8900
 	0    1    1    0   
@@ -1637,7 +1637,7 @@ U 1 1 5EF44B02
 P 4500 9000
 F 0 "TP9" V 4500 9200 50  0000 L CNN
 F 1 "TestPoint" V 4500 9475 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4700 9000 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 9000 50  0001 C CNN
 F 3 "~" H 4700 9000 50  0001 C CNN
 	1    4500 9000
 	0    1    1    0   
@@ -1648,7 +1648,7 @@ U 1 1 5EF54057
 P 4500 9100
 F 0 "TP10" V 4500 9300 50  0000 L CNN
 F 1 "TestPoint" V 4500 9575 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4700 9100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 9100 50  0001 C CNN
 F 3 "~" H 4700 9100 50  0001 C CNN
 	1    4500 9100
 	0    1    1    0   
@@ -1659,7 +1659,7 @@ U 1 1 5EF54061
 P 4500 9200
 F 0 "TP11" V 4500 9400 50  0000 L CNN
 F 1 "TestPoint" V 4500 9675 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4700 9200 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 9200 50  0001 C CNN
 F 3 "~" H 4700 9200 50  0001 C CNN
 	1    4500 9200
 	0    1    1    0   
@@ -1688,7 +1688,7 @@ U 1 1 5EFBE4F7
 P 1600 8100
 F 0 "TP6" V 1600 8300 50  0000 L CNN
 F 1 "TestPoint" V 1600 8575 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1800 8100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1800 8100 50  0001 C CNN
 F 3 "~" H 1800 8100 50  0001 C CNN
 	1    1600 8100
 	0    -1   1    0   
@@ -1699,7 +1699,7 @@ U 1 1 5EFBE501
 P 1600 8200
 F 0 "TP7" V 1600 8400 50  0000 L CNN
 F 1 "TestPoint" V 1600 8675 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1800 8200 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1800 8200 50  0001 C CNN
 F 3 "~" H 1800 8200 50  0001 C CNN
 	1    1600 8200
 	0    -1   1    0   
@@ -1744,7 +1744,7 @@ U 1 1 5D20355B
 P 4500 7500
 F 0 "TP4" V 4500 7700 50  0000 L CNN
 F 1 "TestPoint" V 4500 7975 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4700 7500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 7500 50  0001 C CNN
 F 3 "~" H 4700 7500 50  0001 C CNN
 	1    4500 7500
 	0    1    1    0   
@@ -1757,7 +1757,7 @@ U 1 1 5D2216FB
 P 4500 7800
 F 0 "TP5" V 4500 8000 50  0000 L CNN
 F 1 "TestPoint" V 4500 8275 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4700 7800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 7800 50  0001 C CNN
 F 3 "~" H 4700 7800 50  0001 C CNN
 	1    4500 7800
 	0    1    1    0   
