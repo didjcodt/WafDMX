@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:WafDMX-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L RF_Module:ESP32-WROOM-32D U4
+L WafDMX-rescue:ESP32-WROOM-32D-RF_Module U4
 U 1 1 5CF5AD65
 P 2900 8100
 F 0 "U4" H 2500 9500 50  0000 C CNN
@@ -28,7 +28,7 @@ $EndComp
 Wire Wire Line
 	2000 2400 2000 2500
 $Comp
-L power:GND #PWR018
+L WafDMX-rescue:GND-power #PWR018
 U 1 1 5CF65F11
 P 2000 2500
 F 0 "#PWR018" H 2000 2250 50  0001 C CNN
@@ -39,7 +39,7 @@ F 3 "" H 2000 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR019
+L WafDMX-rescue:GND-power #PWR019
 U 1 1 5CF6792B
 P 2400 2500
 F 0 "#PWR019" H 2400 2250 50  0001 C CNN
@@ -58,7 +58,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 1900 2800 2100
 $Comp
-L power:VCC #PWR014
+L WafDMX-rescue:VCC-power #PWR014
 U 1 1 5CF760E0
 P 1400 1900
 F 0 "#PWR014" H 1400 1750 50  0001 C CNN
@@ -69,7 +69,7 @@ F 3 "" H 1400 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR015
+L WafDMX-rescue:+3V3-power #PWR015
 U 1 1 5CF76827
 P 2800 1900
 F 0 "#PWR015" H 2800 1750 50  0001 C CNN
@@ -83,7 +83,7 @@ Connection ~ 1400 2100
 Wire Wire Line
 	1700 2100 1400 2100
 $Comp
-L power:GND #PWR017
+L WafDMX-rescue:GND-power #PWR017
 U 1 1 5CF6503D
 P 1400 2500
 F 0 "#PWR017" H 1400 2250 50  0001 C CNN
@@ -98,7 +98,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 2100 1400 2200
 $Comp
-L Device:C_Small C7
+L WafDMX-rescue:C_Small-Device C7
 U 1 1 5CF62083
 P 1400 2300
 F 0 "C7" H 1492 2346 50  0000 L CNN
@@ -114,7 +114,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 2400 2800 2500
 $Comp
-L power:GND #PWR020
+L WafDMX-rescue:GND-power #PWR020
 U 1 1 5CF89A24
 P 2800 2500
 F 0 "#PWR020" H 2800 2250 50  0001 C CNN
@@ -125,7 +125,7 @@ F 3 "" H 2800 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C9
+L WafDMX-rescue:C_Small-Device C9
 U 1 1 5CF89A2E
 P 2800 2300
 F 0 "C9" H 2892 2346 50  0000 L CNN
@@ -139,7 +139,7 @@ Wire Wire Line
 	2800 2100 2800 2200
 Connection ~ 2800 2100
 $Comp
-L power:+3V3 #PWR035
+L WafDMX-rescue:+3V3-power #PWR035
 U 1 1 5CF96878
 P 2900 5900
 F 0 "#PWR035" H 2900 5750 50  0001 C CNN
@@ -150,7 +150,7 @@ F 3 "" H 2900 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR037
+L WafDMX-rescue:GND-power #PWR037
 U 1 1 5CF98C2E
 P 2500 6400
 F 0 "#PWR037" H 2500 6150 50  0001 C CNN
@@ -163,7 +163,7 @@ $EndComp
 Wire Wire Line
 	2500 6300 2500 6400
 $Comp
-L Device:C_Small C14
+L WafDMX-rescue:C_Small-Device C14
 U 1 1 5CF98C39
 P 2500 6200
 F 0 "C14" H 2592 6246 50  0000 L CNN
@@ -174,7 +174,7 @@ F 3 "~" H 2500 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR038
+L WafDMX-rescue:GND-power #PWR038
 U 1 1 5CFAAC70
 P 3300 6400
 F 0 "#PWR038" H 3300 6150 50  0001 C CNN
@@ -187,7 +187,7 @@ $EndComp
 Wire Wire Line
 	3300 6300 3300 6400
 $Comp
-L Device:C_Small C15
+L WafDMX-rescue:C_Small-Device C15
 U 1 1 5CFAAC7B
 P 3300 6200
 F 0 "C15" H 3392 6246 50  0000 L CNN
@@ -213,7 +213,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 6900 1800 6900
 $Comp
-L Device:C_Small C16
+L WafDMX-rescue:C_Small-Device C16
 U 1 1 5CFB0FC2
 P 1800 7100
 F 0 "C16" H 1892 7146 50  0000 L CNN
@@ -228,7 +228,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 7200 1800 7300
 $Comp
-L power:GND #PWR041
+L WafDMX-rescue:GND-power #PWR041
 U 1 1 5CFB8FD2
 P 1800 7300
 F 0 "#PWR041" H 1800 7050 50  0001 C CNN
@@ -239,7 +239,7 @@ F 3 "" H 1800 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R9
+L WafDMX-rescue:R_Small-Device R9
 U 1 1 5CFBD309
 P 1800 6700
 F 0 "R9" H 1859 6746 50  0000 L CNN
@@ -255,7 +255,7 @@ Connection ~ 1800 6900
 Wire Wire Line
 	1800 6600 1800 6500
 $Comp
-L power:+3V3 #PWR039
+L WafDMX-rescue:+3V3-power #PWR039
 U 1 1 5CFC5417
 P 1800 6500
 F 0 "#PWR039" H 1800 6350 50  0001 C CNN
@@ -266,23 +266,23 @@ F 3 "" H 1800 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:XLR3 J5
+L WafDMX-rescue:XLR3-Connector J5
 U 1 1 5CFCAE1A
 P 14400 8600
 F 0 "J5" H 14400 8965 50  0000 C CNN
 F 1 "XLR3" H 14400 8874 50  0000 C CNN
-F 2 "" H 14400 8600 50  0001 C CNN
+F 2 "WafDMX:XLR_Neutrik_NC3FAAH_Horizontal" H 14400 8600 50  0001 C CNN
 F 3 " ~" H 14400 8600 50  0001 C CNN
 	1    14400 8600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:XLR3 J6
+L WafDMX-rescue:XLR3-Connector J6
 U 1 1 5CFCCF08
 P 15400 8600
 F 0 "J6" H 15400 8965 50  0000 C CNN
 F 1 "XLR3" H 15400 8874 50  0000 C CNN
-F 2 "" H 15400 8600 50  0001 C CNN
+F 2 "WafDMX:XLR_Neutrik_NC3MAAH_Horizontal" H 15400 8600 50  0001 C CNN
 F 3 " ~" H 15400 8600 50  0001 C CNN
 	1    15400 8600
 	1    0    0    -1  
@@ -304,7 +304,7 @@ Wire Wire Line
 Text Label 12100 8800 0    50   ~ 10
 DMX_MAX_IN
 $Comp
-L power:GND #PWR045
+L WafDMX-rescue:GND-power #PWR045
 U 1 1 5CFF4493
 P 14000 8800
 F 0 "#PWR045" H 14000 8550 50  0001 C CNN
@@ -319,7 +319,7 @@ Wire Wire Line
 Wire Wire Line
 	14000 8600 14000 8800
 $Comp
-L power:GND #PWR046
+L WafDMX-rescue:GND-power #PWR046
 U 1 1 5CFFD345
 P 15000 8800
 F 0 "#PWR046" H 15000 8550 50  0001 C CNN
@@ -366,7 +366,7 @@ Connection ~ 14800 8100
 Wire Wire Line
 	12700 7700 12700 7800
 $Comp
-L power:GND #PWR043
+L WafDMX-rescue:GND-power #PWR043
 U 1 1 5D01DBFB
 P 12700 7800
 F 0 "#PWR043" H 12700 7550 50  0001 C CNN
@@ -377,7 +377,7 @@ F 3 "" H 12700 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C17
+L WafDMX-rescue:C_Small-Device C17
 U 1 1 5D01DC05
 P 12700 7600
 F 0 "C17" H 12792 7646 50  0000 L CNN
@@ -390,7 +390,7 @@ $EndComp
 Wire Wire Line
 	13500 7700 13500 7800
 $Comp
-L power:GND #PWR044
+L WafDMX-rescue:GND-power #PWR044
 U 1 1 5D01DC11
 P 13500 7800
 F 0 "#PWR044" H 13500 7550 50  0001 C CNN
@@ -401,7 +401,7 @@ F 3 "" H 13500 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C18
+L WafDMX-rescue:C_Small-Device C18
 U 1 1 5D01DC1B
 P 13500 7600
 F 0 "C18" H 13592 7646 50  0000 L CNN
@@ -423,7 +423,7 @@ Wire Wire Line
 	13500 7400 13500 7500
 Connection ~ 13100 7400
 $Comp
-L Interface_UART:MAX3485 U5
+L WafDMX-rescue:MAX3485-Interface_UART U5
 U 1 1 5D03C498
 P 13100 8600
 F 0 "U5" H 12900 9100 50  0000 C CNN
@@ -434,7 +434,7 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf" H 13100 8
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR042
+L WafDMX-rescue:+3V3-power #PWR042
 U 1 1 5D0450F3
 P 13100 7300
 F 0 "#PWR042" H 13100 7150 50  0001 C CNN
@@ -495,7 +495,7 @@ Wire Wire Line
 Text Notes 4900 7700 0    50   ~ 10
 USE HSPI
 $Comp
-L Interface_Ethernet:LAN8720A U2
+L WafDMX-rescue:LAN8720A-Interface_Ethernet U2
 U 1 1 5D0A3359
 P 9200 2700
 F 0 "U2" H 8600 1600 50  0000 C CNN
@@ -506,7 +506,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf" H 9000 1750 50  
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Wuerth_7499010121A J1
+L WafDMX-rescue:Wuerth_7499010121A-Connector J1
 U 1 1 5D0A53C5
 P 14000 2500
 F 0 "J1" H 13471 2603 50  0000 R CNN
@@ -531,7 +531,7 @@ Wire Wire Line
 Wire Wire Line
 	14100 1900 14100 1300
 $Comp
-L power:+3V3 #PWR013
+L WafDMX-rescue:+3V3-power #PWR013
 U 1 1 5D154D43
 P 14200 1800
 F 0 "#PWR013" H 14200 1650 50  0001 C CNN
@@ -544,7 +544,7 @@ $EndComp
 Wire Wire Line
 	14200 1800 14200 1900
 $Comp
-L power:+3V3 #PWR012
+L WafDMX-rescue:+3V3-power #PWR012
 U 1 1 5D16338E
 P 13900 1800
 F 0 "#PWR012" H 13900 1650 50  0001 C CNN
@@ -571,7 +571,7 @@ PHY_LED_SPEED
 Text Label 14600 1200 0    50   ~ 10
 PHY_LED_LNK_ACT
 $Comp
-L Device:R_Small R1
+L WafDMX-rescue:R_Small-Device R1
 U 1 1 5D1B3E76
 P 14300 1200
 F 0 "R1" V 14200 1100 50  0000 C CNN
@@ -582,7 +582,7 @@ F 3 "~" H 14300 1200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R2
+L WafDMX-rescue:R_Small-Device R2
 U 1 1 5D1C3F04
 P 14300 1300
 F 0 "R2" V 14400 1200 50  0000 C CNN
@@ -619,7 +619,7 @@ SMI_MDC
 Text Label 7100 2800 2    50   ~ 10
 SMI_MDIO
 $Comp
-L power:GND #PWR025
+L WafDMX-rescue:GND-power #PWR025
 U 1 1 5D2AAB18
 P 13300 3200
 F 0 "#PWR025" H 13300 2950 50  0001 C CNN
@@ -632,7 +632,7 @@ $EndComp
 Wire Wire Line
 	13400 2900 13300 2900
 $Comp
-L Device:C_Small C10
+L WafDMX-rescue:C_Small-Device C10
 U 1 1 5D2F5C7B
 P 13100 3000
 F 0 "C10" H 13192 3046 50  0000 L CNN
@@ -647,7 +647,7 @@ Wire Wire Line
 Wire Wire Line
 	13100 2700 13100 2900
 $Comp
-L power:GND #PWR024
+L WafDMX-rescue:GND-power #PWR024
 U 1 1 5D30FB83
 P 13100 3200
 F 0 "#PWR024" H 13100 2950 50  0001 C CNN
@@ -660,7 +660,7 @@ $EndComp
 Wire Wire Line
 	13100 3200 13100 3100
 $Comp
-L Device:R_Small R7
+L WafDMX-rescue:R_Small-Device R7
 U 1 1 5D34A229
 P 10600 2800
 F 0 "R7" V 10500 2700 50  0000 C CNN
@@ -675,7 +675,7 @@ Wire Wire Line
 Wire Wire Line
 	9900 2800 10500 2800
 $Comp
-L power:GND #PWR022
+L WafDMX-rescue:GND-power #PWR022
 U 1 1 5D356044
 P 11100 2900
 F 0 "#PWR022" H 11100 2650 50  0001 C CNN
@@ -704,7 +704,7 @@ PHY_RX_P
 Text Label 12700 2500 2    50   ~ 10
 PHY_RX_N
 $Comp
-L Oscillator:ASV-xxxMHz X1
+L WafDMX-rescue:ASV-xxxMHz-Oscillator X1
 U 1 1 5D5BC9E3
 P 5100 2500
 F 0 "X1" H 4900 2800 50  0000 L CNN
@@ -717,7 +717,7 @@ $EndComp
 Wire Wire Line
 	5100 2200 5100 1700
 $Comp
-L power:+3V3 #PWR08
+L WafDMX-rescue:+3V3-power #PWR08
 U 1 1 5D5CFD76
 P 5100 1600
 F 0 "#PWR08" H 5100 1450 50  0001 C CNN
@@ -728,7 +728,7 @@ F 3 "" H 5100 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L WafDMX-rescue:GND-power #PWR016
 U 1 1 5D5D6087
 P 5400 2100
 F 0 "#PWR016" H 5400 1850 50  0001 C CNN
@@ -741,7 +741,7 @@ $EndComp
 Wire Wire Line
 	5400 2000 5400 2100
 $Comp
-L Device:C_Small C6
+L WafDMX-rescue:C_Small-Device C6
 U 1 1 5D5D6092
 P 5400 1900
 F 0 "C6" H 5492 1946 50  0000 L CNN
@@ -759,7 +759,7 @@ Connection ~ 5100 1700
 Wire Wire Line
 	5100 1700 5100 1600
 $Comp
-L power:GND #PWR021
+L WafDMX-rescue:GND-power #PWR021
 U 1 1 5D602F74
 P 5100 2900
 F 0 "#PWR021" H 5100 2650 50  0001 C CNN
@@ -776,7 +776,7 @@ Wire Wire Line
 Text Label 5800 2500 0    50   ~ 10
 PHY_CLK
 $Comp
-L Device:R_Small R6
+L WafDMX-rescue:R_Small-Device R6
 U 1 1 5D652CD8
 P 4500 2800
 F 0 "R6" H 4559 2846 50  0000 L CNN
@@ -791,7 +791,7 @@ Wire Wire Line
 Text Label 7100 3400 2    50   ~ 10
 PHY_CLK
 $Comp
-L Device:R_Small R8
+L WafDMX-rescue:R_Small-Device R8
 U 1 1 5D6D8487
 P 8100 3400
 F 0 "R8" V 7904 3400 50  0000 C CNN
@@ -806,7 +806,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 6900 4000 6900
 $Comp
-L Device:R_Small R10
+L WafDMX-rescue:R_Small-Device R10
 U 1 1 5D722812
 P 4200 6900
 F 0 "R10" V 4004 6900 50  0000 C CNN
@@ -827,7 +827,7 @@ Wire Wire Line
 Wire Wire Line
 	12700 2400 12900 2400
 $Comp
-L power:GND #PWR026
+L WafDMX-rescue:GND-power #PWR026
 U 1 1 5D770683
 P 9200 3900
 F 0 "#PWR026" H 9200 3650 50  0001 C CNN
@@ -849,7 +849,7 @@ Wire Wire Line
 	13100 2300 13400 2300
 Connection ~ 13100 2700
 $Comp
-L Device:R_Small R5
+L WafDMX-rescue:R_Small-Device R5
 U 1 1 5D7CB2D1
 P 13100 1700
 F 0 "R5" H 13159 1746 50  0000 L CNN
@@ -862,7 +862,7 @@ $EndComp
 Wire Wire Line
 	13100 1600 13100 1500
 $Comp
-L power:+3V3 #PWR07
+L WafDMX-rescue:+3V3-power #PWR07
 U 1 1 5D7CB2DC
 P 13100 1500
 F 0 "#PWR07" H 13100 1350 50  0001 C CNN
@@ -880,11 +880,11 @@ All resistors MUST be close to LAN8720A
 Wire Wire Line
 	8400 2900 7100 2900
 $Comp
-L Device:R_Small R4
+L WafDMX-rescue:R_Small-Device R4
 U 1 1 5D8C63DB
 P 7600 1700
 F 0 "R4" H 7541 1654 50  0000 R CNN
-F 1 "33R" H 7541 1745 50  0000 R CNN
+F 1 "10K" H 7541 1745 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7600 1700 50  0001 C CNN
 F 3 "~" H 7600 1700 50  0001 C CNN
 	1    7600 1700
@@ -893,7 +893,7 @@ $EndComp
 Wire Wire Line
 	7600 1600 7600 1400
 $Comp
-L power:+3V3 #PWR06
+L WafDMX-rescue:+3V3-power #PWR06
 U 1 1 5D8E9C80
 P 7600 1400
 F 0 "#PWR06" H 7600 1250 50  0001 C CNN
@@ -910,11 +910,11 @@ Wire Wire Line
 Text Notes 9900 3600 0    50   ~ 10
 MODE[2:0] = 111 -> Auto negociation\nPHYAD0 = 1 -> PHY1\n
 $Comp
-L Device:R_Small R3
+L WafDMX-rescue:R_Small-Device R3
 U 1 1 5DB45B73
 P 7300 1700
 F 0 "R3" H 7241 1654 50  0000 R CNN
-F 1 "33R" H 7241 1745 50  0000 R CNN
+F 1 "10K" H 7241 1745 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7300 1700 50  0001 C CNN
 F 3 "~" H 7300 1700 50  0001 C CNN
 	1    7300 1700
@@ -923,7 +923,7 @@ $EndComp
 Wire Wire Line
 	7300 1600 7300 1400
 $Comp
-L power:+3V3 #PWR05
+L WafDMX-rescue:+3V3-power #PWR05
 U 1 1 5DB45B7E
 P 7300 1400
 F 0 "#PWR05" H 7300 1250 50  0001 C CNN
@@ -936,7 +936,7 @@ $EndComp
 NoConn ~ 8400 3200
 NoConn ~ 8400 3500
 $Comp
-L Device:C_Small C2
+L WafDMX-rescue:C_Small-Device C2
 U 1 1 5DBDD82D
 P 9300 900
 F 0 "C2" V 9071 900 50  0000 C CNN
@@ -947,7 +947,7 @@ F 3 "~" H 9300 900 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:GND #PWR01
+L WafDMX-rescue:GND-power #PWR01
 U 1 1 5DBDD839
 P 8700 900
 F 0 "#PWR01" H 8700 650 50  0001 C CNN
@@ -958,7 +958,7 @@ F 3 "" H 8700 900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C1
+L WafDMX-rescue:C_Small-Device C1
 U 1 1 5DBDD843
 P 8900 900
 F 0 "C1" V 8671 900 50  0000 C CNN
@@ -969,7 +969,7 @@ F 3 "~" H 8900 900 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:L_Small L1
+L WafDMX-rescue:L_Small-Device L1
 U 1 1 5DC28EA4
 P 10400 1100
 F 0 "L1" H 10448 1146 50  0000 L CNN
@@ -980,7 +980,7 @@ F 3 "~" H 10400 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C5
+L WafDMX-rescue:C_Small-Device C5
 U 1 1 5DC62D1D
 P 10500 1600
 F 0 "C5" H 10592 1646 50  0000 L CNN
@@ -991,7 +991,7 @@ F 3 "~" H 10500 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C4
+L WafDMX-rescue:C_Small-Device C4
 U 1 1 5DC76262
 P 10300 1600
 F 0 "C4" H 10392 1646 50  0000 L CNN
@@ -1004,7 +1004,7 @@ $EndComp
 Wire Wire Line
 	10300 1700 10300 1800
 $Comp
-L power:GND #PWR010
+L WafDMX-rescue:GND-power #PWR010
 U 1 1 5DCB6C6E
 P 10300 1800
 F 0 "#PWR010" H 10300 1550 50  0001 C CNN
@@ -1017,7 +1017,7 @@ $EndComp
 Wire Wire Line
 	10500 1700 10500 1800
 $Comp
-L power:GND #PWR011
+L WafDMX-rescue:GND-power #PWR011
 U 1 1 5DCB6C79
 P 10500 1800
 F 0 "#PWR011" H 10500 1550 50  0001 C CNN
@@ -1040,7 +1040,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 1000 10400 900 
 $Comp
-L power:+3V3 #PWR03
+L WafDMX-rescue:+3V3-power #PWR03
 U 1 1 5DD44881
 P 10400 900
 F 0 "#PWR03" H 10400 750 50  0001 C CNN
@@ -1051,7 +1051,7 @@ F 3 "" H 10400 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L WafDMX-rescue:C_Small-Device C3
 U 1 1 5DD60E2F
 P 8000 1600
 F 0 "C3" H 8092 1646 50  0000 L CNN
@@ -1064,7 +1064,7 @@ $EndComp
 Wire Wire Line
 	8000 1700 8000 1800
 $Comp
-L power:GND #PWR09
+L WafDMX-rescue:GND-power #PWR09
 U 1 1 5DD60E3A
 P 8000 1800
 F 0 "#PWR09" H 8000 1550 50  0001 C CNN
@@ -1077,7 +1077,7 @@ $EndComp
 Wire Wire Line
 	8000 1500 8000 1400
 $Comp
-L power:+3V3 #PWR04
+L WafDMX-rescue:+3V3-power #PWR04
 U 1 1 5DD90250
 P 8000 1300
 F 0 "#PWR04" H 8000 1150 50  0001 C CNN
@@ -1120,7 +1120,7 @@ Wire Wire Line
 	10400 1300 10400 1200
 Connection ~ 10400 1300
 $Comp
-L power:GND #PWR047
+L WafDMX-rescue:GND-power #PWR047
 U 1 1 5DFC73DD
 P 13100 9300
 F 0 "#PWR047" H 13100 9050 50  0001 C CNN
@@ -1131,7 +1131,7 @@ F 3 "" H 13100 9300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR048
+L WafDMX-rescue:GND-power #PWR048
 U 1 1 5DFDC98D
 P 2900 9500
 F 0 "#PWR048" H 2900 9250 50  0001 C CNN
@@ -1152,7 +1152,7 @@ Connection ~ 9100 900
 Wire Wire Line
 	9100 900  9200 900 
 $Comp
-L power:GND #PWR02
+L WafDMX-rescue:GND-power #PWR02
 U 1 1 5E0A5FBE
 P 9500 900
 F 0 "#PWR02" H 9500 650 50  0001 C CNN
@@ -1167,7 +1167,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 2400 2400 2500
 $Comp
-L Regulator_Linear:AMS1117-3.3 U1
+L WafDMX-rescue:AMS1117-3.3-Regulator_Linear U1
 U 1 1 5CF5D66E
 P 2000 2100
 F 0 "U1" H 2000 2342 50  0000 C CNN
@@ -1178,7 +1178,7 @@ F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2100 1850 50  0001 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C8
+L WafDMX-rescue:C_Small-Device C8
 U 1 1 5CF6C8C7
 P 2400 2300
 F 0 "C8" H 2308 2346 50  0000 R CNN
@@ -1189,7 +1189,7 @@ F 3 "~" H 2400 2300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR028
+L WafDMX-rescue:VCC-power #PWR028
 U 1 1 5E2D4667
 P 12200 4600
 F 0 "#PWR028" H 12200 4450 50  0001 C CNN
@@ -1200,7 +1200,7 @@ F 3 "" H 12200 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR029
+L WafDMX-rescue:GND-power #PWR029
 U 1 1 5E2E4741
 P 12200 4900
 F 0 "#PWR029" H 12200 4650 50  0001 C CNN
@@ -1219,7 +1219,7 @@ Wire Notes Line
 Wire Notes Line
 	500  4200 16000 4200
 $Comp
-L Connector:USB_B_Micro J3
+L WafDMX-rescue:USB_B_Micro-Connector J3
 U 1 1 5E7C8CDB
 P 14900 5200
 F 0 "J3" H 14670 5189 50  0000 R CNN
@@ -1242,7 +1242,7 @@ Wire Wire Line
 Wire Wire Line
 	15000 5700 15000 5600
 $Comp
-L power:GND #PWR034
+L WafDMX-rescue:GND-power #PWR034
 U 1 1 5E81E4C9
 P 14900 5800
 F 0 "#PWR034" H 14900 5550 50  0001 C CNN
@@ -1291,7 +1291,7 @@ F 3 "https://lcsc.com/product-detail/USB_CH340C_C84681.html" H 9450 6700 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR040
+L WafDMX-rescue:GND-power #PWR040
 U 1 1 5EA13B44
 P 9800 6800
 F 0 "#PWR040" H 9800 6550 50  0001 C CNN
@@ -1308,7 +1308,7 @@ NoConn ~ 9500 6700
 Wire Wire Line
 	9200 5000 9200 5100
 $Comp
-L power:GND #PWR030
+L WafDMX-rescue:GND-power #PWR030
 U 1 1 5EA2EE38
 P 9200 5100
 F 0 "#PWR030" H 9200 4850 50  0001 C CNN
@@ -1319,7 +1319,7 @@ F 3 "" H 9200 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C11
+L WafDMX-rescue:C_Small-Device C11
 U 1 1 5EA2EE42
 P 9200 4900
 F 0 "C11" H 9292 4946 50  0000 L CNN
@@ -1338,7 +1338,7 @@ Wire Wire Line
 Wire Wire Line
 	10500 5000 10500 5100
 $Comp
-L power:GND #PWR031
+L WafDMX-rescue:GND-power #PWR031
 U 1 1 5EA57A52
 P 10500 5100
 F 0 "#PWR031" H 10500 4850 50  0001 C CNN
@@ -1349,7 +1349,7 @@ F 3 "" H 10500 5100 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C12
+L WafDMX-rescue:C_Small-Device C12
 U 1 1 5EA57A5C
 P 10500 4900
 F 0 "C12" H 10592 4946 50  0000 L CNN
@@ -1362,7 +1362,7 @@ $EndComp
 Wire Wire Line
 	10800 5000 10800 5100
 $Comp
-L power:GND #PWR032
+L WafDMX-rescue:GND-power #PWR032
 U 1 1 5EA73FC5
 P 10800 5100
 F 0 "#PWR032" H 10800 4850 50  0001 C CNN
@@ -1373,7 +1373,7 @@ F 3 "" H 10800 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C13
+L WafDMX-rescue:C_Small-Device C13
 U 1 1 5EA73FCF
 P 10800 4900
 F 0 "C13" H 10892 4946 50  0000 L CNN
@@ -1393,7 +1393,7 @@ Wire Wire Line
 	10800 4700 10800 4800
 Connection ~ 10500 4700
 $Comp
-L power:+3V3 #PWR027
+L WafDMX-rescue:+3V3-power #PWR027
 U 1 1 5EAF3EA8
 P 10000 4600
 F 0 "#PWR027" H 10000 4450 50  0001 C CNN
@@ -1448,7 +1448,7 @@ DTR
 Wire Notes Line
 	8000 7200 11800 7200
 $Comp
-L Transistor_BJT:MMDT2222A Q1
+L WafDMX-rescue:MMDT2222A-Transistor_BJT Q1
 U 1 1 5EC64F1C
 P 9900 8200
 F 0 "Q1" H 10090 8246 50  0000 L CNN
@@ -1459,7 +1459,7 @@ F 3 "http://www.diodes.com/_files/datasheets/ds30125.pdf" H 9900 8200 50  0001 C
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:MMDT2222A Q1
+L WafDMX-rescue:MMDT2222A-Transistor_BJT Q1
 U 2 1 5EC65FD2
 P 9900 8900
 F 0 "Q1" H 10090 8946 50  0000 L CNN
@@ -1470,7 +1470,7 @@ F 3 "http://www.diodes.com/_files/datasheets/ds30125.pdf" H 9900 8900 50  0001 C
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R11
+L WafDMX-rescue:R_Small-Device R11
 U 1 1 5EC76ABA
 P 9300 8200
 F 0 "R11" V 9104 8200 50  0000 C CNN
@@ -1481,7 +1481,7 @@ F 3 "~" H 9300 8200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R12
+L WafDMX-rescue:R_Small-Device R12
 U 1 1 5EC8459E
 P 9300 8900
 F 0 "R12" V 9104 8900 50  0000 C CNN
@@ -1551,12 +1551,12 @@ Wire Notes Line
 Wire Notes Line
 	8000 4200 8000 9900
 $Comp
-L Connector:Screw_Terminal_01x02 J2
+L WafDMX-rescue:Screw_Terminal_01x02-Connector J2
 U 1 1 5EDE5F57
 P 12400 4800
 F 0 "J2" H 12480 4792 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 12480 4701 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 12400 4800 50  0001 C CNN
+F 2 "WafDMX:TerminalBlock_WAGO_2604-1102_2x05_P5.00mm_30Degree" H 12400 4800 50  0001 C CNN
 F 3 "~" H 12400 4800 50  0001 C CNN
 	1    12400 4800
 	1    0    0    1   
@@ -1577,7 +1577,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 2900 4500 3100
 $Comp
-L power:GND #PWR023
+L WafDMX-rescue:GND-power #PWR023
 U 1 1 5EEFFA64
 P 4500 3100
 F 0 "#PWR023" H 4500 2850 50  0001 C CNN
@@ -1588,7 +1588,7 @@ F 3 "" H 4500 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP1
+L WafDMX-rescue:TestPoint-Connector TP1
 U 1 1 5EF2710E
 P 4500 7100
 F 0 "TP1" V 4500 7300 50  0000 L CNN
@@ -1599,7 +1599,7 @@ F 3 "~" H 4700 7100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP2
+L WafDMX-rescue:TestPoint-Connector TP2
 U 1 1 5EF2B290
 P 4500 7300
 F 0 "TP2" V 4500 7500 50  0000 L CNN
@@ -1610,7 +1610,7 @@ F 3 "~" H 4700 7300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP3
+L WafDMX-rescue:TestPoint-Connector TP3
 U 1 1 5EF37673
 P 4500 7400
 F 0 "TP3" V 4500 7600 50  0000 L CNN
@@ -1621,7 +1621,7 @@ F 3 "~" H 4700 7400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP8
+L WafDMX-rescue:TestPoint-Connector TP8
 U 1 1 5EF44AF8
 P 4500 8900
 F 0 "TP8" V 4500 9100 50  0000 L CNN
@@ -1632,7 +1632,7 @@ F 3 "~" H 4700 8900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP9
+L WafDMX-rescue:TestPoint-Connector TP9
 U 1 1 5EF44B02
 P 4500 9000
 F 0 "TP9" V 4500 9200 50  0000 L CNN
@@ -1643,7 +1643,7 @@ F 3 "~" H 4700 9000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP10
+L WafDMX-rescue:TestPoint-Connector TP10
 U 1 1 5EF54057
 P 4500 9100
 F 0 "TP10" V 4500 9300 50  0000 L CNN
@@ -1654,7 +1654,7 @@ F 3 "~" H 4700 9100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP11
+L WafDMX-rescue:TestPoint-Connector TP11
 U 1 1 5EF54061
 P 4500 9200
 F 0 "TP11" V 4500 9400 50  0000 L CNN
@@ -1683,7 +1683,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 8200 2300 8200
 $Comp
-L Connector:TestPoint TP6
+L WafDMX-rescue:TestPoint-Connector TP6
 U 1 1 5EFBE4F7
 P 1600 8100
 F 0 "TP6" V 1600 8300 50  0000 L CNN
@@ -1694,7 +1694,7 @@ F 3 "~" H 1800 8100 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP7
+L WafDMX-rescue:TestPoint-Connector TP7
 U 1 1 5EFBE501
 P 1600 8200
 F 0 "TP7" V 1600 8400 50  0000 L CNN
@@ -1739,7 +1739,7 @@ Wire Wire Line
 Wire Wire Line
 	1000 8600 2300 8600
 $Comp
-L Connector:TestPoint TP4
+L WafDMX-rescue:TestPoint-Connector TP4
 U 1 1 5D20355B
 P 4500 7500
 F 0 "TP4" V 4500 7700 50  0000 L CNN
@@ -1752,7 +1752,7 @@ $EndComp
 Wire Wire Line
 	3500 7500 4500 7500
 $Comp
-L Connector:TestPoint TP5
+L WafDMX-rescue:TestPoint-Connector TP5
 U 1 1 5D2216FB
 P 4500 7800
 F 0 "TP5" V 4500 8000 50  0000 L CNN
@@ -1775,7 +1775,7 @@ Wire Wire Line
 Wire Wire Line
 	13000 5900 12300 5900
 $Comp
-L Connector:Conn_01x04_Female J4
+L WafDMX-rescue:Conn_01x04_Female-Connector J4
 U 1 1 5D2B4E81
 P 13200 5800
 F 0 "J4" H 13228 5776 50  0000 L CNN
@@ -1792,7 +1792,7 @@ Wire Wire Line
 Wire Wire Line
 	12300 5700 12300 5600
 $Comp
-L power:VCC #PWR033
+L WafDMX-rescue:VCC-power #PWR033
 U 1 1 5D308646
 P 12300 5600
 F 0 "#PWR033" H 12300 5450 50  0001 C CNN
@@ -1803,7 +1803,7 @@ F 3 "" H 12300 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR036
+L WafDMX-rescue:GND-power #PWR036
 U 1 1 5D31918E
 P 12300 6100
 F 0 "#PWR036" H 12300 5850 50  0001 C CNN
@@ -1814,7 +1814,7 @@ F 3 "" H 12300 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP1
+L WafDMX-rescue:SolderJumper_2_Open-Jumper JP1
 U 1 1 5D32AA22
 P 12650 5700
 F 0 "JP1" H 12650 5905 50  0000 C CNN

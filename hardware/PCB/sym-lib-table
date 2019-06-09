@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name WafDMX)(type Legacy)(uri ${KIPRJMOD}/WafDMX.lib)(options "")(descr ""))
+  (lib (name WafDMX-rescue)(type Legacy)(uri ${KIPRJMOD}/WafDMX-rescue.lib)(options "")(descr ""))
 )
