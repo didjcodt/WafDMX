@@ -22,6 +22,7 @@ F 0 "U4" H 2500 9500 50  0000 C CNN
 F 1 "ESP32-WROOM-32D" H 3400 9500 50  0000 C CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 2900 6600 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 2600 8150 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    2900 8100
 	1    0    0    -1  
 $EndComp
@@ -105,6 +106,7 @@ F 0 "C7" H 1492 2346 50  0000 L CNN
 F 1 "1 uF" H 1492 2255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1400 2300 50  0001 C CNN
 F 3 "~" H 1400 2300 50  0001 C CNN
+F 4 "2470425" H 0   0   50  0001 C CNN "Part Number"
 	1    1400 2300
 	1    0    0    -1  
 $EndComp
@@ -132,6 +134,7 @@ F 0 "C9" H 2892 2346 50  0000 L CNN
 F 1 "1 uF" H 2892 2255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2800 2300 50  0001 C CNN
 F 3 "~" H 2800 2300 50  0001 C CNN
+F 4 "2470425" H 0   0   50  0001 C CNN "Part Number"
 	1    2800 2300
 	1    0    0    -1  
 $EndComp
@@ -170,6 +173,7 @@ F 0 "C14" H 2592 6246 50  0000 L CNN
 F 1 "0.1 uF" H 2592 6155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2500 6200 50  0001 C CNN
 F 3 "~" H 2500 6200 50  0001 C CNN
+F 4 "2688469" H 0   0   50  0001 C CNN "Part Number"
 	1    2500 6200
 	1    0    0    -1  
 $EndComp
@@ -194,6 +198,7 @@ F 0 "C15" H 3392 6246 50  0000 L CNN
 F 1 "0.1 uF" H 3392 6155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3300 6200 50  0001 C CNN
 F 3 "~" H 3300 6200 50  0001 C CNN
+F 4 "2688469" H 0   0   50  0001 C CNN "Part Number"
 	1    3300 6200
 	1    0    0    -1  
 $EndComp
@@ -220,6 +225,7 @@ F 0 "C16" H 1892 7146 50  0000 L CNN
 F 1 "0.1 uF" H 1892 7055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1800 7100 50  0001 C CNN
 F 3 "~" H 1800 7100 50  0001 C CNN
+F 4 "2688469" H 0   0   50  0001 C CNN "Part Number"
 	1    1800 7100
 	1    0    0    -1  
 $EndComp
@@ -246,6 +252,7 @@ F 0 "R9" H 1859 6746 50  0000 L CNN
 F 1 "10K" H 1859 6655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 6700 50  0001 C CNN
 F 3 "~" H 1800 6700 50  0001 C CNN
+F 4 "2303192" H 0   0   50  0001 C CNN "Part Number"
 	1    1800 6700
 	1    0    0    -1  
 $EndComp
@@ -273,6 +280,7 @@ F 0 "J5" H 14400 8965 50  0000 C CNN
 F 1 "XLR3" H 14400 8874 50  0000 C CNN
 F 2 "WafDMX:XLR_Neutrik_NC3FAAH_Horizontal" H 14400 8600 50  0001 C CNN
 F 3 " ~" H 14400 8600 50  0001 C CNN
+F 4 "724518" H 0   0   50  0001 C CNN "Part Number"
 	1    14400 8600
 	1    0    0    -1  
 $EndComp
@@ -284,6 +292,7 @@ F 0 "J6" H 15400 8965 50  0000 C CNN
 F 1 "XLR3" H 15400 8874 50  0000 C CNN
 F 2 "WafDMX:XLR_Neutrik_NC3MAAH_Horizontal" H 15400 8600 50  0001 C CNN
 F 3 " ~" H 15400 8600 50  0001 C CNN
+F 4 "724543" H 0   0   50  0001 C CNN "Part Number"
 	1    15400 8600
 	1    0    0    -1  
 $EndComp
@@ -384,6 +393,7 @@ F 0 "C17" H 12792 7646 50  0000 L CNN
 F 1 "0.1 uF" H 12792 7555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 12700 7600 50  0001 C CNN
 F 3 "~" H 12700 7600 50  0001 C CNN
+F 4 "2688469" H 0   0   50  0001 C CNN "Part Number"
 	1    12700 7600
 	1    0    0    -1  
 $EndComp
@@ -408,6 +418,7 @@ F 0 "C18" H 13592 7646 50  0000 L CNN
 F 1 "1 uF" H 13592 7555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 13500 7600 50  0001 C CNN
 F 3 "~" H 13500 7600 50  0001 C CNN
+F 4 "2470425" H 0   0   50  0001 C CNN "Part Number"
 	1    13500 7600
 	1    0    0    -1  
 $EndComp
@@ -430,6 +441,7 @@ F 0 "U5" H 12900 9100 50  0000 C CNN
 F 1 "MAX3485" H 13300 9100 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 13100 7900 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf" H 13100 8650 50  0001 C CNN
+F 4 "2512100" H 0   0   50  0001 C CNN "Part Number"
 	1    13100 8600
 	1    0    0    -1  
 $EndComp
@@ -502,6 +514,7 @@ F 0 "U2" H 8600 1600 50  0000 C CNN
 F 1 "LAN8720A" H 9600 1600 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 9250 1650 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf" H 9000 1750 50  0001 C CNN
+F 4 "2292578" H 0   0   50  0001 C CNN "Part Number"
 	1    9200 2700
 	1    0    0    -1  
 $EndComp
@@ -513,6 +526,7 @@ F 0 "J1" H 13471 2603 50  0000 R CNN
 F 1 "Wuerth_7499010121A" H 13471 2512 50  0000 R CNN
 F 2 "Connector_RJ:RJ45_Wuerth_7499010121A_Horizontal" H 14000 1875 50  0001 C CNN
 F 3 "http://katalog.we-online.de/pbs/datasheet/7499010121A.pdf" H 13585 2265 50  0001 L TNN
+F 4 "1636379" H 0   0   50  0001 C CNN "Part Number"
 	1    14000 2500
 	-1   0    0    -1  
 $EndComp
@@ -578,6 +592,7 @@ F 0 "R1" V 14200 1100 50  0000 C CNN
 F 1 "0R" V 14200 1400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 14300 1200 50  0001 C CNN
 F 3 "~" H 14300 1200 50  0001 C CNN
+F 4 "1469739" H 0   0   50  0001 C CNN "Part Number"
 	1    14300 1200
 	0    1    1    0   
 $EndComp
@@ -589,6 +604,7 @@ F 0 "R2" V 14400 1200 50  0000 C CNN
 F 1 "330R" V 14400 1500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 14300 1300 50  0001 C CNN
 F 3 "~" H 14300 1300 50  0001 C CNN
+F 4 "1469803" H 0   0   50  0001 C CNN "Part Number"
 	1    14300 1300
 	0    1    1    0   
 $EndComp
@@ -639,6 +655,7 @@ F 0 "C10" H 13192 3046 50  0000 L CNN
 F 1 "0.1uF" H 13192 2955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 13100 3000 50  0001 C CNN
 F 3 "~" H 13100 3000 50  0001 C CNN
+F 4 "2688469" H 0   0   50  0001 C CNN "Part Number"
 	1    13100 3000
 	-1   0    0    -1  
 $EndComp
@@ -667,6 +684,7 @@ F 0 "R7" V 10500 2700 50  0000 C CNN
 F 1 "12K1 1%" V 10500 3000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 10600 2800 50  0001 C CNN
 F 3 "~" H 10600 2800 50  0001 C CNN
+F 4 "2447244" H 0   0   50  0001 C CNN "Part Number"
 	1    10600 2800
 	0    1    1    0   
 $EndComp
@@ -711,6 +729,7 @@ F 0 "X1" H 4900 2800 50  0000 L CNN
 F 1 "ASV-50MHz" H 5200 2200 50  0000 L CNN
 F 2 "Oscillator:Oscillator_SMD_Abracon_ASV-4Pin_7.0x5.1mm" H 5800 2150 50  0001 C CNN
 F 3 "http://www.abracon.com/Oscillators/ASV.pdf" H 5000 2500 50  0001 C CNN
+F 4 "1611840" H 0   0   50  0001 C CNN "Part Number"
 	1    5100 2500
 	1    0    0    -1  
 $EndComp
@@ -748,6 +767,7 @@ F 0 "C6" H 5492 1946 50  0000 L CNN
 F 1 "0.1 uF" H 5492 1855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5400 1900 50  0001 C CNN
 F 3 "~" H 5400 1900 50  0001 C CNN
+F 4 "2688469" H 0   0   50  0001 C CNN "Part Number"
 	1    5400 1900
 	1    0    0    -1  
 $EndComp
@@ -783,6 +803,7 @@ F 0 "R6" H 4559 2846 50  0000 L CNN
 F 1 "10K" H 4559 2755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4500 2800 50  0001 C CNN
 F 3 "~" H 4500 2800 50  0001 C CNN
+F 4 "2303192" H 0   0   50  0001 C CNN "Part Number"
 	1    4500 2800
 	1    0    0    -1  
 $EndComp
@@ -798,6 +819,7 @@ F 0 "R8" V 7904 3400 50  0000 C CNN
 F 1 "33R" V 7995 3400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8100 3400 50  0001 C CNN
 F 3 "~" H 8100 3400 50  0001 C CNN
+F 4 "9238301" H 0   0   50  0001 C CNN "Part Number"
 	1    8100 3400
 	0    1    1    0   
 $EndComp
@@ -813,6 +835,7 @@ F 0 "R10" V 4004 6900 50  0000 C CNN
 F 1 "33R" V 4095 6900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4200 6900 50  0001 C CNN
 F 3 "~" H 4200 6900 50  0001 C CNN
+F 4 "9238301" H 0   0   50  0001 C CNN "Part Number"
 	1    4200 6900
 	0    1    1    0   
 $EndComp
@@ -856,6 +879,7 @@ F 0 "R5" H 13159 1746 50  0000 L CNN
 F 1 "0R" H 13159 1655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 13100 1700 50  0001 C CNN
 F 3 "~" H 13100 1700 50  0001 C CNN
+F 4 "1469739" H 0   0   50  0001 C CNN "Part Number"
 	1    13100 1700
 	1    0    0    -1  
 $EndComp
@@ -887,6 +911,7 @@ F 0 "R4" H 7541 1654 50  0000 R CNN
 F 1 "10K" H 7541 1745 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7600 1700 50  0001 C CNN
 F 3 "~" H 7600 1700 50  0001 C CNN
+F 4 "2303192" H 0   0   50  0001 C CNN "Part Number"
 	1    7600 1700
 	-1   0    0    1   
 $EndComp
@@ -917,6 +942,7 @@ F 0 "R3" H 7241 1654 50  0000 R CNN
 F 1 "10K" H 7241 1745 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7300 1700 50  0001 C CNN
 F 3 "~" H 7300 1700 50  0001 C CNN
+F 4 "2303192" H 0   0   50  0001 C CNN "Part Number"
 	1    7300 1700
 	-1   0    0    1   
 $EndComp
@@ -943,6 +969,7 @@ F 0 "C2" V 9071 900 50  0000 C CNN
 F 1 "470pF" V 9162 900 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9300 900 50  0001 C CNN
 F 3 "~" H 9300 900 50  0001 C CNN
+F 4 "8819904" H 0   0   50  0001 C CNN "Part Number"
 	1    9300 900 
 	0    -1   1    0   
 $EndComp
@@ -965,6 +992,7 @@ F 0 "C1" V 8671 900 50  0000 C CNN
 F 1 "1 uF" V 8762 900 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8900 900 50  0001 C CNN
 F 3 "~" H 8900 900 50  0001 C CNN
+F 4 "2470425" H 0   0   50  0001 C CNN "Part Number"
 	1    8900 900 
 	0    -1   1    0   
 $EndComp
@@ -976,6 +1004,7 @@ F 0 "L1" H 10448 1146 50  0000 L CNN
 F 1 "2.0A/0.050DCR" H 10448 1055 50  0000 L CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" H 10400 1100 50  0001 C CNN
 F 3 "~" H 10400 1100 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    10400 1100
 	1    0    0    -1  
 $EndComp
@@ -987,6 +1016,7 @@ F 0 "C5" H 10592 1646 50  0000 L CNN
 F 1 "0.1 uF" H 10592 1555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10500 1600 50  0001 C CNN
 F 3 "~" H 10500 1600 50  0001 C CNN
+F 4 "2688469" H 0   0   50  0001 C CNN "Part Number"
 	1    10500 1600
 	1    0    0    -1  
 $EndComp
@@ -998,6 +1028,7 @@ F 0 "C4" H 10392 1646 50  0000 L CNN
 F 1 "0.1 uF" H 10392 1555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10300 1600 50  0001 C CNN
 F 3 "~" H 10300 1600 50  0001 C CNN
+F 4 "2688469" H 0   0   50  0001 C CNN "Part Number"
 	1    10300 1600
 	-1   0    0    -1  
 $EndComp
@@ -1058,6 +1089,7 @@ F 0 "C3" H 8092 1646 50  0000 L CNN
 F 1 "0.1 uF" H 8092 1555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8000 1600 50  0001 C CNN
 F 3 "~" H 8000 1600 50  0001 C CNN
+F 4 "2688469" H 0   0   50  0001 C CNN "Part Number"
 	1    8000 1600
 	1    0    0    -1  
 $EndComp
@@ -1174,6 +1206,7 @@ F 0 "U1" H 2000 2342 50  0000 C CNN
 F 1 "AMS1117-3.3" H 2000 2251 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2000 2300 50  0001 C CNN
 F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2100 1850 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    2000 2100
 	1    0    0    -1  
 $EndComp
@@ -1185,6 +1218,7 @@ F 0 "C8" H 2308 2346 50  0000 R CNN
 F 1 "10 uF" H 2308 2255 50  0000 R CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 2400 2300 50  0001 C CNN
 F 3 "~" H 2400 2300 50  0001 C CNN
+F 4 "2672214RL" H 0   0   50  0001 C CNN "Part Number"
 	1    2400 2300
 	-1   0    0    -1  
 $EndComp
@@ -1226,6 +1260,7 @@ F 0 "J3" H 14670 5189 50  0000 R CNN
 F 1 "USB_B_Micro" H 14670 5098 50  0000 R CNN
 F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 15050 5150 50  0001 C CNN
 F 3 "~" H 15050 5150 50  0001 C CNN
+F 4 "2293836" H 0   0   50  0001 C CNN "Part Number"
 	1    14900 5200
 	-1   0    0    -1  
 $EndComp
@@ -1287,6 +1322,7 @@ F 0 "U3" H 9800 6881 50  0000 C CNN
 F 1 "CH340C" H 9800 6790 50  0000 C CNN
 F 2 "Package_SO:SOP-16_4.4x10.4mm_P1.27mm" H 9450 6700 50  0001 C CNN
 F 3 "https://lcsc.com/product-detail/USB_CH340C_C84681.html" H 9450 6700 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    9800 5900
 	1    0    0    -1  
 $EndComp
@@ -1326,6 +1362,7 @@ F 0 "C11" H 9292 4946 50  0000 L CNN
 F 1 "0.01 uF" H 9292 4855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9200 4900 50  0001 C CNN
 F 3 "~" H 9200 4900 50  0001 C CNN
+F 4 "2470432" H 0   0   50  0001 C CNN "Part Number"
 	1    9200 4900
 	1    0    0    -1  
 $EndComp
@@ -1356,6 +1393,7 @@ F 0 "C12" H 10592 4946 50  0000 L CNN
 F 1 "0.1 uF" H 10592 4855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10500 4900 50  0001 C CNN
 F 3 "~" H 10500 4900 50  0001 C CNN
+F 4 "2688469" H 0   0   50  0001 C CNN "Part Number"
 	1    10500 4900
 	-1   0    0    -1  
 $EndComp
@@ -1380,6 +1418,7 @@ F 0 "C13" H 10892 4946 50  0000 L CNN
 F 1 "22 uF" H 10892 4855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 10800 4900 50  0001 C CNN
 F 3 "~" H 10800 4900 50  0001 C CNN
+F 4 "1735533" H 0   0   50  0001 C CNN "Part Number"
 	1    10800 4900
 	1    0    0    -1  
 $EndComp
@@ -1455,6 +1494,7 @@ F 0 "Q1" H 10090 8246 50  0000 L CNN
 F 1 "MMDT2222A" H 10090 8155 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 10100 8300 50  0001 C CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds30125.pdf" H 9900 8200 50  0001 C CNN
+F 4 "2317636" H 0   0   50  0001 C CNN "Part Number"
 	1    9900 8200
 	1    0    0    -1  
 $EndComp
@@ -1466,6 +1506,7 @@ F 0 "Q1" H 10090 8946 50  0000 L CNN
 F 1 "MMDT2222A" H 10090 8855 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 10100 9000 50  0001 C CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds30125.pdf" H 9900 8900 50  0001 C CNN
+F 4 "2317636" H 0   0   50  0001 C CNN "Part Number"
 	2    9900 8900
 	1    0    0    -1  
 $EndComp
@@ -1477,6 +1518,7 @@ F 0 "R11" V 9104 8200 50  0000 C CNN
 F 1 "10K" V 9195 8200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9300 8200 50  0001 C CNN
 F 3 "~" H 9300 8200 50  0001 C CNN
+F 4 "2303192" H 0   0   50  0001 C CNN "Part Number"
 	1    9300 8200
 	0    1    1    0   
 $EndComp
@@ -1488,6 +1530,7 @@ F 0 "R12" V 9104 8900 50  0000 C CNN
 F 1 "10K" V 9195 8900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9300 8900 50  0001 C CNN
 F 3 "~" H 9300 8900 50  0001 C CNN
+F 4 "2303192" H 0   0   50  0001 C CNN "Part Number"
 	1    9300 8900
 	0    1    1    0   
 $EndComp
@@ -1558,6 +1601,7 @@ F 0 "J2" H 12480 4792 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 12480 4701 50  0000 L CNN
 F 2 "WafDMX:TerminalBlock_WAGO_2604-1102_2x05_P5.00mm_30Degree" H 12400 4800 50  0001 C CNN
 F 3 "~" H 12400 4800 50  0001 C CNN
+F 4 "2821984" H 0   0   50  0001 C CNN "Part Number"
 	1    12400 4800
 	1    0    0    1   
 $EndComp
@@ -1595,6 +1639,7 @@ F 0 "TP1" V 4500 7300 50  0000 L CNN
 F 1 "TestPoint" V 4500 7575 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 7100 50  0001 C CNN
 F 3 "~" H 4700 7100 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    4500 7100
 	0    1    1    0   
 $EndComp
@@ -1606,6 +1651,7 @@ F 0 "TP2" V 4500 7500 50  0000 L CNN
 F 1 "TestPoint" V 4500 7775 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 7300 50  0001 C CNN
 F 3 "~" H 4700 7300 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    4500 7300
 	0    1    1    0   
 $EndComp
@@ -1617,6 +1663,7 @@ F 0 "TP3" V 4500 7600 50  0000 L CNN
 F 1 "TestPoint" V 4500 7875 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 7400 50  0001 C CNN
 F 3 "~" H 4700 7400 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    4500 7400
 	0    1    1    0   
 $EndComp
@@ -1628,6 +1675,7 @@ F 0 "TP8" V 4500 9100 50  0000 L CNN
 F 1 "TestPoint" V 4500 9375 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 8900 50  0001 C CNN
 F 3 "~" H 4700 8900 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    4500 8900
 	0    1    1    0   
 $EndComp
@@ -1639,6 +1687,7 @@ F 0 "TP9" V 4500 9200 50  0000 L CNN
 F 1 "TestPoint" V 4500 9475 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 9000 50  0001 C CNN
 F 3 "~" H 4700 9000 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    4500 9000
 	0    1    1    0   
 $EndComp
@@ -1650,6 +1699,7 @@ F 0 "TP10" V 4500 9300 50  0000 L CNN
 F 1 "TestPoint" V 4500 9575 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 9100 50  0001 C CNN
 F 3 "~" H 4700 9100 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    4500 9100
 	0    1    1    0   
 $EndComp
@@ -1661,6 +1711,7 @@ F 0 "TP11" V 4500 9400 50  0000 L CNN
 F 1 "TestPoint" V 4500 9675 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 9200 50  0001 C CNN
 F 3 "~" H 4700 9200 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    4500 9200
 	0    1    1    0   
 $EndComp
@@ -1688,6 +1739,7 @@ F 0 "TP7" V 1600 8400 50  0000 L CNN
 F 1 "TestPoint" V 1600 8675 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1800 8200 50  0001 C CNN
 F 3 "~" H 1800 8200 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    1600 8200
 	0    -1   1    0   
 $EndComp
@@ -1699,6 +1751,7 @@ F 0 "P1" H 12000 4700 50  0001 C CNN
 F 1 "POW_OUT" H 11800 4900 50  0001 L CNN
 F 2 "" H 12000 4700 50  0001 C CNN
 F 3 "" H 12000 4700 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    12100 4700
 	1    0    0    -1  
 $EndComp
@@ -1733,6 +1786,7 @@ F 0 "TP4" V 4500 7700 50  0000 L CNN
 F 1 "TestPoint" V 4500 7975 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 7500 50  0001 C CNN
 F 3 "~" H 4700 7500 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    4500 7500
 	0    1    1    0   
 $EndComp
@@ -1746,6 +1800,7 @@ F 0 "TP5" V 4500 8000 50  0000 L CNN
 F 1 "TestPoint" V 4500 8275 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 7800 50  0001 C CNN
 F 3 "~" H 4700 7800 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    4500 7800
 	0    1    1    0   
 $EndComp
@@ -1769,6 +1824,7 @@ F 0 "J4" H 13228 5776 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 12500 5500 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 13200 5800 50  0001 C CNN
 F 3 "~" H 13200 5800 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    13200 5800
 	1    0    0    -1  
 $EndComp
@@ -1808,6 +1864,7 @@ F 0 "JP1" H 12650 5905 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 12850 5800 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 12650 5700 50  0001 C CNN
 F 3 "~" H 12650 5700 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    12650 5700
 	1    0    0    -1  
 $EndComp
@@ -1823,6 +1880,7 @@ F 0 "P2" H 9000 900 50  0001 C CNN
 F 1 "POW_OUT" H 8800 1100 50  0001 L CNN
 F 2 "" H 9000 900 50  0001 C CNN
 F 3 "" H 9000 900 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    9100 900 
 	1    0    0    -1  
 $EndComp
@@ -1834,6 +1892,7 @@ F 0 "P3" H 9100 4700 50  0001 C CNN
 F 1 "POW_OUT" H 8900 4900 50  0001 L CNN
 F 2 "" H 9100 4700 50  0001 C CNN
 F 3 "" H 9100 4700 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    9200 4700
 	1    0    0    -1  
 $EndComp
@@ -1846,6 +1905,7 @@ F 0 "P4" H 10300 1300 50  0001 C CNN
 F 1 "POW_OUT" H 10100 1500 50  0001 L CNN
 F 2 "" H 10300 1300 50  0001 C CNN
 F 3 "" H 10300 1300 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 	1    10400 1300
 	1    0    0    -1  
 $EndComp
@@ -1859,6 +1919,7 @@ F 0 "U6" H 6800 5900 50  0000 C CNN
 F 1 "TXB0102DCU" H 6900 4900 50  0000 C CNN
 F 2 "Package_SO:VSSOP-8_2.4x2.1mm_P0.5mm" H 6500 4850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/txb0102.pdf" H 6500 5370 50  0001 C CNN
+F 4 "2295723" H 0   0   50  0001 C CNN "Part Number"
 	1    6500 5400
 	1    0    0    -1  
 $EndComp
@@ -1900,6 +1961,7 @@ F 0 "R13" H 5859 5946 50  0000 L CNN
 F 1 "R_Small" H 5859 5855 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5800 5900 50  0001 C CNN
 F 3 "~" H 5800 5900 50  0001 C CNN
+F 4 "2303192" H 0   0   50  0001 C CNN "Part Number"
 	1    5800 5900
 	1    0    0    -1  
 $EndComp
@@ -1970,6 +2032,7 @@ F 0 "C19" H 5992 4846 50  0000 L CNN
 F 1 "0.1 uF" H 5992 4755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5900 4800 50  0001 C CNN
 F 3 "~" H 5900 4800 50  0001 C CNN
+F 4 "2688469" H 0   0   50  0001 C CNN "Part Number"
 	1    5900 4800
 	1    0    0    -1  
 $EndComp
@@ -1996,6 +2059,7 @@ F 0 "C20" H 7192 4846 50  0000 L CNN
 F 1 "0.1 uF" H 7192 4755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7100 4800 50  0001 C CNN
 F 3 "~" H 7100 4800 50  0001 C CNN
+F 4 "2688469" H 0   0   50  0001 C CNN "Part Number"
 	1    7100 4800
 	1    0    0    -1  
 $EndComp

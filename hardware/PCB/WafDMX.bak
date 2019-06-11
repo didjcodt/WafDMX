@@ -2015,4 +2015,9 @@ Wire Notes Line
 	5200 4200 5200 6600
 Wire Notes Line
 	5200 6600 8000 6600
+Text Label 5700 5700 2    50   ~ 10
+SPI_OE
+Wire Wire Line
+	5700 5700 5800 5700
+Connection ~ 5800 5700
 $EndSCHEMATC
