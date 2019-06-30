@@ -63,6 +63,7 @@ void app_main() {
 
     // Depends on WiFi
     mqtt_init();
+    tcpip_adapter_init();
     artnet_init();
     ESP_LOGI("MQTT", "Waiting for mqtt");
     xEventGroupWaitBits(mqtt_event_group, MQTT_CONNECTED_BIT, false, true,
