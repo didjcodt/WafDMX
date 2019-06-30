@@ -7,7 +7,7 @@
 #include "mqtt_client.h"
 #include "queues.h"
 
-static const char* TAG = "MQTT";
+static const char *TAG = "MQTT";
 #define MQTT_PAYLOAD_MAX_SIZE_BYTES 256
 #define TOPIC_OTA CONFIG_MQTT_PREFIX "/ota"
 #define TOPIC_LOGS CONFIG_MQTT_PREFIX "/logs"
@@ -54,14 +54,14 @@ static void mqtt_parse_payload(esp_mqtt_event_handle_t event) {
 
     if (memcmp(event->topic, TOPIC_OTA, event->topic_len) == 0) {
         ESP_LOGI(TAG, "OTA update!");
-        char* payload = pvPortMalloc(sizeof(char) * QUEUE_SIZE_OTA);
+        char *payload = pvPortMalloc(sizeof(char) * QUEUE_SIZE_OTA);
         if (payload == NULL) {
             ESP_LOGE(TAG, "Could not allocate memory to get MQTT payload");
             return;
         }
         memcpy(payload, event->data, sizeof(char) * event->data_len);
         payload[event->data_len] = '\0';
-        if (xQueueSend(dispatcher_queues[QUEUE_OTA], (void*)payload,
+        if (xQueueSend(dispatcher_queues[QUEUE_OTA], (void *)payload,
                        500 / portTICK_PERIOD_MS) != pdTRUE) {
             ESP_LOGI(TAG, "Queue is not available, ignoring message");
         }
@@ -80,7 +80,7 @@ static void mqtt_parse_payload(esp_mqtt_event_handle_t event) {
             payload += (event->data[i] - '0') * pow10(i);
         }
 
-        if (xQueueSend(dispatcher_queues[QUEUE_ANIM], (void*)&payload,
+        if (xQueueSend(dispatcher_queues[QUEUE_ANIM], (void *)&payload,
                        500 / portTICK_PERIOD_MS) != pdTRUE) {
             ESP_LOGI(TAG, "Queue is not available, ignoring message");
         }
@@ -98,7 +98,7 @@ static void mqtt_parse_payload(esp_mqtt_event_handle_t event) {
         }
         if (payload > 100) payload = 100;
 
-        if (xQueueSend(dispatcher_queues[QUEUE_BRIG], (void*)&payload,
+        if (xQueueSend(dispatcher_queues[QUEUE_BRIG], (void *)&payload,
                        500 / portTICK_PERIOD_MS) != pdTRUE) {
             ESP_LOGI(TAG, "Queue is not available, ignoring message");
         }
@@ -113,7 +113,7 @@ static void mqtt_parse_payload(esp_mqtt_event_handle_t event) {
             }
         }
 
-        if (xQueueSend(dispatcher_queues[QUEUE_COLO], (void*)&event->data,
+        if (xQueueSend(dispatcher_queues[QUEUE_COLO], (void *)&event->data,
                        500 / portTICK_PERIOD_MS) != pdTRUE) {
             ESP_LOGI(TAG, "Queue is not available, ignoring message");
         }
@@ -131,7 +131,7 @@ static void mqtt_parse_payload(esp_mqtt_event_handle_t event) {
         }
         if (payload > 100) payload = 100;
 
-        if (xQueueSend(dispatcher_queues[QUEUE_LED_BRIG], (void*)&payload,
+        if (xQueueSend(dispatcher_queues[QUEUE_LED_BRIG], (void *)&payload,
                        500 / portTICK_PERIOD_MS) != pdTRUE) {
             ESP_LOGI(TAG, "Queue is not available, ignoring message");
         }
@@ -146,7 +146,7 @@ static void mqtt_parse_payload(esp_mqtt_event_handle_t event) {
             }
         }
 
-        if (xQueueSend(dispatcher_queues[QUEUE_LED_COLO], (void*)&event->data,
+        if (xQueueSend(dispatcher_queues[QUEUE_LED_COLO], (void *)&event->data,
                        500 / portTICK_PERIOD_MS) != pdTRUE) {
             ESP_LOGI(TAG, "Queue is not available, ignoring message");
         }
@@ -156,7 +156,7 @@ static void mqtt_parse_payload(esp_mqtt_event_handle_t event) {
     }
 }
 
-static int mqtt_vprintf(const char* fmt, va_list ap) {
+static int mqtt_vprintf(const char *fmt, va_list ap) {
     // Get the formatted string
     char buf[256];
     int bufsz = vsprintf(buf, fmt, ap);

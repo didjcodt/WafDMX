@@ -3,6 +3,7 @@
 #include "apa102.h"
 
 enum led_animation_name {
+    ANIMATE_0,
     ANIMATE_1,
     ANIMATE_2,
     ANIMATE_3,

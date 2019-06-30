@@ -42,4 +42,16 @@ config LEDS_COUNT
     help
         Number of leds in the strip.
 
+config ARTNET_UNIVERSE
+    int "Art-Net universe"
+    default 1
+    help
+        Universe the LED strip is in.
+
+config ARTNET_ADDRESS
+    int "Art-Net address"
+    default 0
+    help
+        DMX512 start address.
+
 endmenu

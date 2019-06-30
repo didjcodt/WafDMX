@@ -11,6 +11,7 @@
 #include "nvs_flash.h"
 
 // Other
+#include "artnet.h"
 #include "led.h"
 #include "mqtt.h"
 #include "ota.h"
@@ -62,6 +63,7 @@ void app_main() {
 
     // Depends on WiFi
     mqtt_init();
+    artnet_init();
     ESP_LOGI("MQTT", "Waiting for mqtt");
     xEventGroupWaitBits(mqtt_event_group, MQTT_CONNECTED_BIT, false, true,
                         portMAX_DELAY);
