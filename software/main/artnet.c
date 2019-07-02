@@ -1,7 +1,6 @@
 #include "artnet.h"
 
 #include <string.h>
-#include "tcpip_adapter.h"
 
 // FreeRTOS includes
 #include "esp_log.h"
@@ -19,32 +18,32 @@ uint8_t led_dmx_buffer[CONFIG_LEDS_COUNT * 3] = {0};
 static const char *TAG = "ARTNET";
 static const uint8_t ARTNET_DMX_START = 18;
 static const uint16_t ARTNET_PORT = 6454;
-static const uint32_t ARTNET_OPCODE_POLL = 0x2000;
-static const uint32_t ARTNET_OPCODE_POLL_REPLY = 0x2100;
-static const uint32_t ARTNET_OPCODE_ADDRESS = 0x6000;
-static const uint32_t ARTNET_OPCODE_INPUT = 0x7000;
-static const uint32_t ARTNET_OPCODE_IPPROG = 0xf800;
-static const uint32_t ARTNET_OPCODE_IPPROG_REPLY = 0xf900;
-static const uint32_t ARTNET_OPCODE_COMMAND = 0x2400;
-static const uint32_t ARTNET_OPCODE_DMX = 0x5000;
-static const uint32_t ARTNET_OPCODE_NZS = 0x5100;
-static const uint32_t ARTNET_OPCODE_SYNC = 0x5200;
-static const uint32_t ARTNET_OPCODE_TOD_REQUEST = 0x8000;
-static const uint32_t ARTNET_OPCODE_TOD_DATA = 0x8100;
-static const uint32_t ARTNET_OPCODE_TOD_CONTROL = 0x8200;
-static const uint32_t ARTNET_OPCODE_RDM = 0x8300;
-static const uint32_t ARTNET_OPCODE_RDM_SUB = 0x8400;
-static const uint32_t ARTNET_OPCODE_TIME_CODE = 0x9700;
-static const uint32_t ARTNET_OPCODE_TIME_SYNC = 0x9800;
-static const uint32_t ARTNET_OPCODE_TRIGGER = 0x9900;
-static const uint32_t ARTNET_OPCODE_DIAG_DATA = 0x2300;
-static const uint32_t ARTNET_OPCODE_FIRMWARE_MASTER = 0xF200;
-static const uint32_t ARTNET_OPCODE_FIRMWARE_REPLY = 0xF300;
-static const uint32_t ARTNET_OPCODE_DIRECTORY = 0x9A00;
-static const uint32_t ARTNET_OPCODE_DIRECTORY_REPLY = 0x9B00;
-static const uint32_t ARTNET_OPCODE_FILE_TN_MASTER = 0xF400;
-static const uint32_t ARTNET_OPCODE_FILE_FN_MASTER = 0xF500;
-static const uint32_t ARTNET_OPCODE_FILE_FN_REPLY = 0xF600;
+#define ARTNET_OPCODE_POLL 0x2000
+#define ARTNET_OPCODE_POLL_REPLY 0x2100
+#define ARTNET_OPCODE_ADDRESS 0x6000
+#define ARTNET_OPCODE_INPUT 0x7000
+#define ARTNET_OPCODE_IPPROG 0xf800
+#define ARTNET_OPCODE_IPPROG_REPLY 0xf900
+#define ARTNET_OPCODE_COMMAND 0x2400
+#define ARTNET_OPCODE_DMX 0x5000
+#define ARTNET_OPCODE_NZS 0x5100
+#define ARTNET_OPCODE_SYNC 0x5200
+#define ARTNET_OPCODE_TOD_REQUEST 0x8000
+#define ARTNET_OPCODE_TOD_DATA 0x8100
+#define ARTNET_OPCODE_TOD_CONTROL 0x8200
+#define ARTNET_OPCODE_RDM 0x8300
+#define ARTNET_OPCODE_RDM_SUB 0x8400
+#define ARTNET_OPCODE_TIME_CODE 0x9700
+#define ARTNET_OPCODE_TIME_SYNC 0x9800
+#define ARTNET_OPCODE_TRIGGER 0x9900
+#define ARTNET_OPCODE_DIAG_DATA 0x2300
+#define ARTNET_OPCODE_FIRMWARE_MASTER 0xF200
+#define ARTNET_OPCODE_FIRMWARE_REPLY 0xF300
+#define ARTNET_OPCODE_DIRECTORY 0x9A00
+#define ARTNET_OPCODE_DIRECTORY_REPLY 0x9B00
+#define ARTNET_OPCODE_FILE_TN_MASTER 0xF400
+#define ARTNET_OPCODE_FILE_FN_MASTER 0xF500
+#define ARTNET_OPCODE_FILE_FN_REPLY 0xF600
 
 static int udp_socket;
 static uint8_t artnetPacket[ARTNET_BUFFER_SIZE];

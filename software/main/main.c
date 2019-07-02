@@ -8,9 +8,12 @@
 // ESP specific includes
 #include "esp_log.h"
 #include "esp_system.h"
+#include "esp_event.h"
 #include "nvs_flash.h"
 
 // Other
+#include "tcpip_adapter.h"
+#include "eth.h"
 #include "artnet.h"
 #include "led.h"
 #include "mqtt.h"
@@ -56,6 +59,13 @@ void app_main() {
     // Initialize static queues
     queues_init();
 
+    // Initialize networking
+    tcpip_adapter_init();
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
+    ESP_ERROR_CHECK(tcpip_adapter_set_default_eth_handlers());
+
+    eth_init();
+
     wifi_init();
     ESP_LOGI("WIFI", "Waiting for wifi");
     xEventGroupWaitBits(wifi_event_group, WIFI_CONNECTED_BIT, false, true,
@@ -63,7 +73,6 @@ void app_main() {
 
     // Depends on WiFi
     mqtt_init();
-    tcpip_adapter_init();
     artnet_init();
     ESP_LOGI("MQTT", "Waiting for mqtt");
     xEventGroupWaitBits(mqtt_event_group, MQTT_CONNECTED_BIT, false, true,
