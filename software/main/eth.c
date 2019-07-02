@@ -15,6 +15,7 @@
 
 // Other
 #include "tcpip_adapter.h"
+#include "wifi.h"
 
 static const char *TAG = "ETH";
 static esp_eth_handle_t s_eth_handle = NULL;
@@ -48,6 +49,8 @@ static void got_ip_event_handler(void *arg, esp_event_base_t event_base,
     ESP_LOGI(TAG, "ETHIP:" IPSTR, IP2STR(&ip_info->ip));
     ESP_LOGI(TAG, "ETHMASK:" IPSTR, IP2STR(&ip_info->netmask));
     ESP_LOGI(TAG, "ETHGW:" IPSTR, IP2STR(&ip_info->gw));
+
+    xEventGroupSetBits(net_event_group, ETH_CONNECTED_BIT);
 }
 
 

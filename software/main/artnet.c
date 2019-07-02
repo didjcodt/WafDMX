@@ -12,6 +12,9 @@
 #include "lwip/sockets.h"
 #include "lwip/sys.h"
 
+// Other
+#include "wifi.h"
+
 uint8_t led_dmx_buffer[CONFIG_LEDS_COUNT * 3] = {0};
 
 #define ARTNET_BUFFER_SIZE 530
@@ -93,7 +96,14 @@ static void artnet_read(void *pvParameter) {
     }
 }
 
-void artnet_init() {
+#define ARTNET_INIT_ASYNC_TASK_STACK_SIZE 4096
+StaticTask_t artnet_init_async_task_buffer;
+StackType_t artnet_init_async_task_stack[ARTNET_INIT_ASYNC_TASK_STACK_SIZE];
+static void artnet_init_async(void *pvParameter) {
+    ESP_LOGI(TAG, "Waiting for network connectivity");
+    xEventGroupWaitBits(net_event_group, WIFI_CONNECTED_BIT | ETH_CONNECTED_BIT,
+          false, false, portMAX_DELAY);
+
     udp_socket = socket(AF_INET, SOCK_DGRAM, IPPROTO_IP);
     if (udp_socket < 0) {
         ESP_LOGE(TAG, "Unable to create socket: errno %d", errno);
@@ -117,4 +127,15 @@ void artnet_init() {
     xTaskCreateStatic(&artnet_read, "artnet_read", ARTNET_READ_TASK_STACK_SIZE,
                       NULL, tskIDLE_PRIORITY + 1, artnet_read_task_stack,
                       &artnet_read_task_buffer);
+
+    // XXX Ugly hack
+    while (1) {
+       vTaskDelay(portMAX_DELAY);
+    }
+}
+
+void artnet_init() {
+    xTaskCreateStatic(&artnet_init_async, "artnet_init",
+          ARTNET_INIT_ASYNC_TASK_STACK_SIZE, NULL, tskIDLE_PRIORITY + 1,
+          artnet_init_async_task_stack, &artnet_init_async_task_buffer);
 }

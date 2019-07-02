@@ -59,32 +59,28 @@ void app_main() {
     // Initialize static queues
     queues_init();
 
-    // Initialize networking
-    tcpip_adapter_init();
-    ESP_ERROR_CHECK(esp_event_loop_create_default());
-    ESP_ERROR_CHECK(tcpip_adapter_set_default_eth_handlers());
-
-    eth_init();
-
-    wifi_init();
-    ESP_LOGI("WIFI", "Waiting for wifi");
-    xEventGroupWaitBits(wifi_event_group, WIFI_CONNECTED_BIT, false, true,
-                        portMAX_DELAY);
-
-    // Depends on WiFi
-    mqtt_init();
-    artnet_init();
-    ESP_LOGI("MQTT", "Waiting for mqtt");
-    xEventGroupWaitBits(mqtt_event_group, MQTT_CONNECTED_BIT, false, true,
-                        portMAX_DELAY);
-
-    // Depends on MQTT+WiFi
-    ota_init();
-
     // Initialize spi device
     apa102_spi_device_t device = {.clock_speed_hz = CONFIG_SPI_SPEED_HZ,
                                   .mosi = PIN_NUM_MOSI,
                                   .clk = PIN_NUM_CLK,
                                   .cs = 4};
     led_init(&device);
+
+    // Initialize networking
+    tcpip_adapter_init();
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
+    ESP_ERROR_CHECK(tcpip_adapter_set_default_eth_handlers());
+    // Wifi init initalizes net_event_group needed for eth, call first!
+    wifi_init();
+    eth_init();
+
+    mqtt_init();
+
+    artnet_init();
+
+    // Depends on MQTT (and so, WiFi)
+    ESP_LOGI("MQTT", "Waiting for mqtt");
+    xEventGroupWaitBits(mqtt_event_group, MQTT_CONNECTED_BIT, false, true,
+                        portMAX_DELAY);
+    ota_init();
 }

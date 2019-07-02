@@ -6,6 +6,7 @@
 #include "freertos/FreeRTOS.h"
 #include "mqtt_client.h"
 #include "queues.h"
+#include "wifi.h"
 
 static const char *TAG = "MQTT";
 #define MQTT_PAYLOAD_MAX_SIZE_BYTES 256
@@ -217,7 +218,24 @@ static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event) {
     return ESP_OK;
 }
 
+#define MQTT_INIT_STACK_SIZE 2048
+StaticTask_t mqtt_init_buffer;
+StackType_t mqtt_init_stack[MQTT_INIT_STACK_SIZE];
+static void mqtt_init_async(void *pvParameter) {
+    ESP_LOGI(TAG, "Waiting for network connectivity");
+    xEventGroupWaitBits(net_event_group, WIFI_CONNECTED_BIT,
+          false, false, portMAX_DELAY);
+    esp_mqtt_client_start(client);
+
+    // XXX Ugly hack
+    while (1) {
+       vTaskDelay(portMAX_DELAY);
+    }
+}
+
 void mqtt_init() {
+    mqtt_event_group = xEventGroupCreate();
+
     const esp_mqtt_client_config_t mqtt_cfg = {
         .uri = CONFIG_MQTT_URL,
         .client_id = CONFIG_MQTT_CLIENT_ID,
@@ -225,8 +243,9 @@ void mqtt_init() {
         .password = CONFIG_MQTT_CLIENT_ID,
         .event_handle = mqtt_event_handler};
 
-    mqtt_event_group = xEventGroupCreate();
-
     client = esp_mqtt_client_init(&mqtt_cfg);
-    esp_mqtt_client_start(client);
+
+    xTaskCreateStatic(&mqtt_init_async, "mqtt_init",
+                      MQTT_INIT_STACK_SIZE, NULL, tskIDLE_PRIORITY + 1,
+                      mqtt_init_stack, &mqtt_init_buffer);
 }

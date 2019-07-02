@@ -14,7 +14,7 @@
 #include "esp_wpa2.h"
 
 // WiFi
-EventGroupHandle_t wifi_event_group;
+EventGroupHandle_t net_event_group;
 
 static void sc_callback(smartconfig_status_t status, void *pdata) {
     switch (status) {
@@ -44,7 +44,7 @@ static void sc_callback(smartconfig_status_t status, void *pdata) {
                 ESP_LOGI("WIFI", "Phone ip: %d.%d.%d.%d\n", phone_ip[0],
                          phone_ip[1], phone_ip[2], phone_ip[3]);
             }
-            xEventGroupSetBits(wifi_event_group, WIFI_ESPTOUCH_DONE_BIT);
+            xEventGroupSetBits(net_event_group, WIFI_ESPTOUCH_DONE_BIT);
             break;
         default:
             break;
@@ -57,7 +57,7 @@ void smartconfig_task(void *pvParameter) {
     ESP_ERROR_CHECK(esp_smartconfig_start(sc_callback));
     while (1) {
         uxBits = xEventGroupWaitBits(
-            wifi_event_group, WIFI_CONNECTED_BIT | WIFI_ESPTOUCH_DONE_BIT, true,
+            net_event_group, WIFI_CONNECTED_BIT | WIFI_ESPTOUCH_DONE_BIT, true,
             false, portMAX_DELAY);
         if (uxBits & WIFI_CONNECTED_BIT) {
             ESP_LOGI("WIFI", "WiFi Connected to ap");
@@ -79,14 +79,14 @@ static esp_err_t wifi_event_handler(void *ctx, system_event_t *event) {
             // XXX Uncomment to reenable smartconfig
             // xTaskCreate(smartconfig_task, "smartconfig_task", 4096, NULL, 3,
             //            NULL);
-            xEventGroupSetBits(wifi_event_group, WIFI_STARTED_BIT);
+            xEventGroupSetBits(net_event_group, WIFI_STARTED_BIT);
             break;
         case SYSTEM_EVENT_STA_GOT_IP:
-            xEventGroupSetBits(wifi_event_group, WIFI_CONNECTED_BIT);
+            xEventGroupSetBits(net_event_group, WIFI_CONNECTED_BIT);
             break;
         case SYSTEM_EVENT_STA_DISCONNECTED:
             esp_wifi_connect();
-            xEventGroupClearBits(wifi_event_group, WIFI_CONNECTED_BIT);
+            xEventGroupClearBits(net_event_group, WIFI_CONNECTED_BIT);
             break;
         default:
             break;
@@ -95,8 +95,7 @@ static esp_err_t wifi_event_handler(void *ctx, system_event_t *event) {
 }
 
 void wifi_init(void) {
-    tcpip_adapter_init();
-    wifi_event_group = xEventGroupCreate();
+    net_event_group = xEventGroupCreate();
     ESP_ERROR_CHECK(esp_event_loop_init(wifi_event_handler, NULL));
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
