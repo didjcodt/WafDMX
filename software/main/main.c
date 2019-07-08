@@ -22,8 +22,8 @@
 #include "wifi.h"
 
 // GPIO Definition
-#define PIN_NUM_MOSI 14
-#define PIN_NUM_CLK 13
+#define PIN_NUM_MOSI 13
+#define PIN_NUM_CLK 14
 
 static const char *TAG = "MAIN_APP";
 

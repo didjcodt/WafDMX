@@ -4,6 +4,7 @@
 #
 
 PROJECT_NAME := wafdmx
+IDF_PATH ?= /home/didjcodt/esp-idf
 
 include $(IDF_PATH)/make/project.mk
 
