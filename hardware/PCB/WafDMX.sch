@@ -1792,18 +1792,6 @@ F 4 "-" H 0   0   50  0001 C CNN "Part Number"
 $EndComp
 Wire Wire Line
 	3500 7500 4500 7500
-$Comp
-L WafDMX-rescue:TestPoint-Connector-WafDMX-rescue TP5
-U 1 1 5D2216FB
-P 4500 7800
-F 0 "TP5" V 4500 8000 50  0000 L CNN
-F 1 "TestPoint" V 4500 8275 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4700 7800 50  0001 C CNN
-F 3 "~" H 4700 7800 50  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Part Number"
-	1    4500 7800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3500 7800 4500 7800
 Wire Notes Line
@@ -1949,10 +1937,8 @@ F 3 "" H 6600 4500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6600 4500 6600 4600
-Text Label 1300 8100 2    50   ~ 10
+Text Label 4500 7800 0    50   ~ 10
 SPI_OE
-Wire Wire Line
-	2300 8100 1300 8100
 $Comp
 L Device:R_Small R13
 U 1 1 5D097009
