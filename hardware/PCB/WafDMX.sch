@@ -1443,12 +1443,12 @@ F 3 "" H 10000 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9300 6000 8600 6000
-Wire Wire Line
 	9300 5800 8600 5800
-Text Label 8600 5800 0    50   ~ 10
-USB_DN
+Wire Wire Line
+	9300 6000 8600 6000
 Text Label 8600 6000 0    50   ~ 10
+USB_DN
+Text Label 8600 5800 0    50   ~ 10
 USB_DP
 Wire Wire Line
 	3500 7000 4500 7000
