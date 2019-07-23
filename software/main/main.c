@@ -6,19 +6,19 @@
 #include "freertos/event_groups.h"
 
 // ESP specific includes
+#include "esp_event.h"
 #include "esp_log.h"
 #include "esp_system.h"
-#include "esp_event.h"
 #include "nvs_flash.h"
 
 // Other
-#include "tcpip_adapter.h"
-#include "eth.h"
 #include "artnet.h"
+#include "eth.h"
 #include "led.h"
 #include "mqtt.h"
 #include "ota.h"
 #include "queues.h"
+#include "tcpip_adapter.h"
 #include "wifi.h"
 
 // GPIO Definition

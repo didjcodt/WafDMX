@@ -223,13 +223,13 @@ StaticTask_t mqtt_init_buffer;
 StackType_t mqtt_init_stack[MQTT_INIT_STACK_SIZE];
 static void mqtt_init_async(void *pvParameter) {
     ESP_LOGI(TAG, "Waiting for network connectivity");
-    xEventGroupWaitBits(net_event_group, WIFI_CONNECTED_BIT,
-          false, false, portMAX_DELAY);
+    xEventGroupWaitBits(net_event_group, WIFI_CONNECTED_BIT, false, false,
+                        portMAX_DELAY);
     esp_mqtt_client_start(client);
 
     // XXX Ugly hack
     while (1) {
-       vTaskDelay(portMAX_DELAY);
+        vTaskDelay(portMAX_DELAY);
     }
 }
 
@@ -245,7 +245,6 @@ void mqtt_init() {
 
     client = esp_mqtt_client_init(&mqtt_cfg);
 
-    xTaskCreateStatic(&mqtt_init_async, "mqtt_init",
-                      MQTT_INIT_STACK_SIZE, NULL, tskIDLE_PRIORITY + 1,
-                      mqtt_init_stack, &mqtt_init_buffer);
+    xTaskCreateStatic(&mqtt_init_async, "mqtt_init", MQTT_INIT_STACK_SIZE, NULL,
+                      tskIDLE_PRIORITY + 1, mqtt_init_stack, &mqtt_init_buffer);
 }
