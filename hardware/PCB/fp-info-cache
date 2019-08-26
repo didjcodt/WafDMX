@@ -1,4 +1,4 @@
-15626465709600872
+15629596196817554
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -70581,12 +70581,26 @@ varistor SIOV
 2
 2
 WafDMX
+LCD_TFT_ILI9341
+Through hole angled pin header, 1x14, 2.54mm pitch, 6mm pin length, single row
+Through hole angled pin header THT 1x14 2.54mm single row
+0
+14
+14
+WafDMX
 TerminalBlock_WAGO_2604-1102_2x05_P5.00mm_30Degree
 
 
 0
 4
 2
+WafDMX
+VQFP100_Pitch-0.5mm_Dimensions-16.00x16.00x1.20mm
+S-PQFP-G100
+S-PQFP-G100
+0
+100
+100
 WafDMX
 XLR_Neutrik_NC3FAAH_Horizontal
 3 pole female XLR receptacle, grounding: without ground/shell contact, horizontal PCB mount (http://www.neutrik.com/en/xlr/aa-series/nc3faah)

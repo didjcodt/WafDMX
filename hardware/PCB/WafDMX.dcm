@@ -6,4 +6,27 @@ K USB serial FTDI
 F https://lcsc.com/product-detail/USB_CH340C_C84681.html
 $ENDCMP
 #
+$CMP ICE40HX1K-VQ100
+D FPGA - Field Programmable Gate Array iCE40HX 1280 LUTs 1.2V Ultra Low-Power
+K FPGA iCE40 HX
+F http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/iCE/iCE40LPHXFamilyDataSheet.pdf
+$ENDCMP
+#
+$CMP TFT_LCD_ILI9341
+D 8-bit bidirectional voltage level translator with auto-direction sensing USON package
+K bidirectional voltage level translator
+F http://www.lcdwiki.com/2.8inch_SPI_Module_ILI9341_SKU:MSP2807
+$ENDCMP
+#
+$CMP TXB0108
+D 8-bit bidirectional voltage level translator with auto-direction sensing USON package
+K bidirectional voltage level translator
+F http://www.ti.com/lit/ds/symlink/txb0108.pdf
+$ENDCMP
+#
+$CMP VDD_LED
+D Power flag, positive voltage
+K power-flag
+$ENDCMP
+#
 #End Doc Library

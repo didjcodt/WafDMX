@@ -8,5 +8,5 @@ BOARD = $(shell  ls $(MAKEFILE_PATH)/*.pro | xargs -n 1 basename --suffix .pro |
 
 -include /opt/kicad-tools/etc/rules.mk
 
+.PHONY: dummy
 dummy:
-	.PHONY
